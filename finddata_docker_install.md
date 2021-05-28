@@ -20,7 +20,7 @@ sudo  docker-compose up -d --build
 
 ## 4. Visit Web URL: http://IP:8089
 `See: hello word`
-
+`Request: open port on service`
 ## Well Done!
 
 
