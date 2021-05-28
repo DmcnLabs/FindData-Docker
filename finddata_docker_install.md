@@ -19,7 +19,8 @@ sudo  docker-compose up -d --build
 ```
 
 ## 4. Visit Web URL: http://IP:8089
-`See: hello word`
+`See: hello word`   
+
 `Request: open port on service`
 ## Well Done!
 
@@ -29,5 +30,5 @@ sudo  docker-compose up -d --build
 
 ### Docker info (eg: CentOS Linux 7)
 ` 
- Data Space Used: 2 GB ;  Memory Space Used Space Used: 5 MB
+ Data Space Used: 2 GB ;  Memory Space Used: 5 MB
 `
