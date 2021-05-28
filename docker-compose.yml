@@ -19,7 +19,7 @@ php:
 volume:
     build: ./volume/
     volumes:
-        -  /data/wwwroot:/data/standbox
+        -  /data/:/data/standbox
     command: chmod -R 755 /data/standboxe
     command: sleep infinity #keep alive 
 
