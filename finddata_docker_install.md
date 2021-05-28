@@ -1,5 +1,5 @@
 # FindData Docker install
-## 1. install docker 
+## 1. install docker (CentOS core > 3.10)
 ```
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
