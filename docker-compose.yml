@@ -1,0 +1,48 @@
+nginx:
+    build: ./nginx/
+    ports:
+        - 8089:80
+    links:
+        - php
+    volumes_from:
+        - volume
+
+php:
+    build: ./php/
+    expose:
+        - 9000
+    links:
+        - mysql
+    volumes_from:
+        - volume
+
+volume:
+    build: ./volume/
+    volumes:
+        -  /Applications/MAMP/htdocs/docker/volume:/data/standbox
+    command: chmod -R 755 /data/standboxe
+    command: sleep infinity #keep alive 
+
+mysql:
+    image: daocloud.io/mysql:latest
+    volumes_from:
+        - data
+    environment:
+        MYSQL_ROOT_PASSWORD: password1
+        MYSQL_USER: user1
+        MYSQL_PASSWORD: password1
+
+data:
+    image: daocloud.io/mysql:latest
+    volumes:
+        - /var/lib/mysql
+    command: "true"
+
+phpmyadmin:
+    image: index.docker.io/phpmyadmin/phpmyadmin 
+    ports:
+        - 8088:80
+    links:
+        - mysql
+    environment:
+        PMA_HOST: mysql
