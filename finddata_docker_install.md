@@ -1,5 +1,5 @@
 # FindData Docker install
-## 1. install docker (CentOS core > 3.10)
+## 1. install docker (CentOS core > 3.10) [How to install docker?](https://docs.docker.com/get-started/)
 ```
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
@@ -12,7 +12,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 ## 3. github get docker-compose.yml
 ```
-git clone git@github.com:finddataio/finddata_docker.git
+git clone https://github.com/finddataio/finddata_docker.git
 cd finddata_docker
 docker-compose up -d --build
 ```
