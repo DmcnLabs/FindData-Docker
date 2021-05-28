@@ -1,7 +1,7 @@
 # FindData Docker install
 ## 1. install docker (CentOS core > 3.10) [How to install docker?](https://docs.docker.com/get-started/)
 ```
-curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+sudo curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
 ## 2. install docker-compose
 ```
@@ -14,7 +14,8 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 git clone https://github.com/finddataio/finddata_docker.git
 cd finddata_docker
-docker-compose up -d --build
+sudo systemctl start docker 
+sudo  docker-compose up -d --build
 ```
 
 ## 4. Visit Web URL: http://IP:8089
