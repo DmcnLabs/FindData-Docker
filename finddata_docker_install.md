@@ -16,9 +16,13 @@ git clone git@github.com:finddataio/finddata_docker.git
 cd finddata_docker
 docker-compose up -d --build
 ```
+
+## 4. Visit Web URL: http://IP:8089
+`See: hello word`
+
 ## Well Done!
 
-## Web URL: http://IP:8089
+
 
 
 
