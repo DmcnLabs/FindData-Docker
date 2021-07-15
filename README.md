@@ -1,4 +1,4 @@
-# FindData_coker
+# FindData_docker
 ## Linux + Nginx + PHP + Mysql environment in Docker
 ### How to use
 ```

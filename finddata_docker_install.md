@@ -32,3 +32,5 @@ sudo  docker-compose up -d --build
 ` 
  Data Space Used: 2 GB ;  Memory Space Used: 5 MB
 `
+
+### Lincese
