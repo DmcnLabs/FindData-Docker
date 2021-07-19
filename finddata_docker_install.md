@@ -26,8 +26,6 @@ sudo  docker-compose up -d --build
 
 
 
-
-
 ### Docker info (eg: CentOS Linux 7)
 ` 
  Data Space Used: 2 GB ;  Memory Space Used: 5 MB
